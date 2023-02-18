@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <build>
+        <defaultGoal>clean package</defaultGoal>
+    </build>
+
+    <groupId>com.hpfxd.pandaspigot</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.8.8-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>PandaSpigot-Parent</name>
+
+    <modules>
+        <module>PandaSpigot-Server</module>
+        <module>PandaSpigot-API</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>velocity-repo</id>
+            <url>https://repo.velocitypowered.com/snapshots/</url>
+        </repository>
+        <repository>
+            <id>elmakers-repo</id>
+            <url>https://maven.elmakers.com/repository/</url>
+        </repository>
+    </repositories>
+
+</project>
